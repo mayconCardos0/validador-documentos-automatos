@@ -1,0 +1,8 @@
+br\edu\fesa\validador_documentos\ValidadorDocumentosApplication.class
+br\edu\fesa\validador_documentos\service\RgService.class
+br\edu\fesa\validador_documentos\service\CpfService.class
+br\edu\fesa\validador_documentos\service\CpfService$1.class
+br\edu\fesa\validador_documentos\service\RgService$Estado.class
+br\edu\fesa\validador_documentos\service\RgService$1.class
+br\edu\fesa\validador_documentos\service\CpfService$Estado.class
+br\edu\fesa\validador_documentos\controller\ValidadorDocumentosController.class

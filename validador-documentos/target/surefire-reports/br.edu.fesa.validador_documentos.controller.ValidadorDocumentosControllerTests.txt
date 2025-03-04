@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------------
+Test set: br.edu.fesa.validador_documentos.controller.ValidadorDocumentosControllerTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.969 s <<< FAILURE! -- in br.edu.fesa.validador_documentos.controller.ValidadorDocumentosControllerTests
+br.edu.fesa.validador_documentos.controller.ValidadorDocumentosControllerTests.naoDeveAceitarTipoDesconhecido -- Time elapsed: 0.940 s <<< ERROR!
+org.mockito.exceptions.misusing.NotAMockException: 
+
+Argument(s) passed is not a mock!
+Examples of correct verifications:
+    verifyNoMoreInteractions(mockOne, mockTwo);
+    verifyNoInteractions(mockOne, mockTwo);
+
+	at br.edu.fesa.validador_documentos.controller.ValidadorDocumentosControllerTests.naoDeveAceitarTipoDesconhecido(ValidadorDocumentosControllerTests.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+br.edu.fesa.validador_documentos.controller.ValidadorDocumentosControllerTests.deveAceitarChamadaDeRg -- Time elapsed: 0.013 s <<< ERROR!
+org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+	at br.edu.fesa.validador_documentos.controller.ValidadorDocumentosControllerTests.deveAceitarChamadaDeRg(ValidadorDocumentosControllerTests.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+br.edu.fesa.validador_documentos.controller.ValidadorDocumentosControllerTests.deveAceitarChamadaDeCpf -- Time elapsed: 0.005 s <<< ERROR!
+org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/native/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+	at br.edu.fesa.validador_documentos.controller.ValidadorDocumentosControllerTests.deveAceitarChamadaDeCpf(ValidadorDocumentosControllerTests.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

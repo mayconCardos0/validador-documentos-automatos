@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de CPF e RG</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <script src="/js/validador.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4 fw-bold">Validador de CPF e RG</h3>
+                        <div id="validationForm" >
+                            <div class="mb-3">
+                                <input type="text" id="documento" class="form-control control-custom"
+                                    placeholder="Digite o RG ou CPF (com ou sem pontuação)" maxlength="14">
+                                <p id="cpfResult" class="result"></p>
+                            </div>
+                            <div class="mb-3 d-flex justify-content-center align-items-center">
+                                <div class="radio-custom-group">
+                                    <input id="cpfRadio" type="radio" class="radio-custom" name="tipoDocumento" value="cpf" checked>
+                                    <label for="cpfRadio" class="radio-custom-label">CPF</label>
+                                    <input id="rgRadio" type="radio" class="radio-custom" name="tipoDocumento" value="rg">
+                                    <label for="rgRadio" class="radio-custom-label">RG</label>
+                                    <span class="radio-slider"></span>
+                                </div>
+                            </div>
+                            <div class="mb-3 d-flex justify-content-center align-items-center">
+                                <button onclick="validar(); return false;" class="btn btn-custom mt-2 w-75 txt-validar fw-bold">VALIDAR
+                                    <i class="fas fa-file"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

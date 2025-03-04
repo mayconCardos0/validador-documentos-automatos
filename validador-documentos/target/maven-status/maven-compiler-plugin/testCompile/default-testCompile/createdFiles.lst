@@ -1,0 +1,4 @@
+br\edu\fesa\validador_documentos\service\RgServiceTests.class
+br\edu\fesa\validador_documentos\service\CpfServiceTests.class
+br\edu\fesa\validador_documentos\ValidadorDocumentosApplicationTests.class
+ValidadorDocumentosControllerTest.class

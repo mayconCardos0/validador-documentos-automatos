@@ -1,0 +1,102 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    border-radius: 30px !important;
+}
+
+.control-custom {
+    border-radius: 8px !important;
+    text-align:center !important;
+}
+
+.btn-custom {
+    background-color: #022d5b !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    transition: background-color 0.3s ease !important;
+    height: 75% !important;
+}
+
+.btn-custom:hover {
+    background-color: #054283 !important;
+}
+
+.radio-custom {
+    display: none;
+}
+
+.radio-custom-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    height: 2vw;
+    width: 4vw;
+    border-radius: 15px;
+    background-color: transparent;
+    color: gray;
+    margin: 0;
+    z-index: 1;
+}
+
+.radio-custom:checked+.radio-custom-label {
+    color: #fff;
+    font-weight: bold;
+}
+
+.radio-custom-group {
+    position: relative;
+    width: 120px;
+    height: calc(1.5em + .75rem + 2px);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ced4da;
+}
+
+.radio-slider {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #022d5b;
+    border-radius: 15px;
+    transition: left 0.3s ease,background-color 0.3s ease !important;
+    visibility: hidden;
+}
+
+#cpfRadio:checked:hover ~ .radio-slider {
+    background-color: #054283 !important;
+}
+
+#rgRadio:checked:hover ~ .radio-slider {
+    background-color: #054283 !important;
+}
+
+.radio-custom:checked ~ .radio-slider {
+    visibility: visible;
+}  
+
+#cpfRadio:checked~.radio-slider {
+    left: 0;
+}
+
+#rgRadio:checked~.radio-slider {
+    left: 50%;
+}
+
+.fw-bold{
+    font-weight: bold !important;
+}
+
+.txt-validar{
+    letter-spacing: 3px;
+}
+
+.modal-content{
+    border-radius:30px !important;
+}
