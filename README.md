@@ -64,7 +64,7 @@ Abaixo está a imagem representando o Autômato Finito Determinístico (AFD) uti
 | q9          | [0-9]   | q10           |
 | q10         | -       | q11           |
 | q10         | [0-9]   | q12           |
-| q11         | [0-9]   | q12           |
+| q11         | [0-9], X| q12           |
 
 ### Autômato para CPF
 Abaixo está a imagem representando o Autômato Finito Determinístico (AFD) utilizado para a validação de CPF:
